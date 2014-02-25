@@ -1,0 +1,20 @@
+.slider {
+  display: none;
+}
+
+.tnySlider-container {
+  overflow: hidden;
+}
+
+.tnySlider-wrapper {
+  content: "";
+  display: table;
+}
+
+.tnySlider-wrapper::after {
+  clear: both;
+}
+
+.slide {
+  float: left;
+}
