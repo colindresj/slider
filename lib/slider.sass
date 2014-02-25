@@ -5,11 +5,11 @@
   overflow: hidden
 
 .tnySlider-wrapper
-  -webkit-transition: 0.5s left
-    -moz-transition: 0.5s left
-    -ms-transition: 0.5s left
-    -o-transition: 0.5s left
-    transition: 0.5s left
+  -webkit-transition: 1s all
+    -moz-transition: 1s all
+    -ms-transition: 1s all
+    -o-transition: 1s all
+    transition: 1s all
 
   &::before, &::after
   content: ''
@@ -38,15 +38,17 @@
     width: 20px
     background: black
     margin: 10px
+    &:hover
+      cursor: pointer
     &::before
       color: white
       position: absolute
       top: 0
       left: 5px
+    &.no-click
+      cursor: default
+      opacity: .5
   &> .tnySlider-arrow-left::before
     content: '<'
   &> .tnySlider-arrow-right::before
     content: '>'
-
-
-

@@ -7,11 +7,11 @@
 }
 
 .tnySlider-wrapper {
-  -webkit-transition: 0.5s left;
-  -webkit-transition--moz-transition: 0.5s left;
-  -webkit-transition--ms-transition: 0.5s left;
-  -webkit-transition--o-transition: 0.5s left;
-  -webkit-transition-transition: 0.5s left;
+  -webkit-transition: 1s all;
+  -webkit-transition--moz-transition: 1s all;
+  -webkit-transition--ms-transition: 1s all;
+  -webkit-transition--o-transition: 1s all;
+  -webkit-transition-transition: 1s all;
   content: "";
   display: table;
 }
@@ -43,11 +43,18 @@
   background: black;
   margin: 10px;
 }
+.tnySlider-arrows > .tnySlider-arrow-left:hover, .tnySlider-arrows > .tnySlider-arrow-right:hover {
+  cursor: pointer;
+}
 .tnySlider-arrows > .tnySlider-arrow-left::before, .tnySlider-arrows > .tnySlider-arrow-right::before {
   color: white;
   position: absolute;
   top: 0;
   left: 5px;
+}
+.tnySlider-arrows > .tnySlider-arrow-left.no-click, .tnySlider-arrows > .tnySlider-arrow-right.no-click {
+  cursor: default;
+  opacity: 0.5;
 }
 .tnySlider-arrows > .tnySlider-arrow-left::before {
   content: "<";
