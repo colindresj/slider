@@ -1,0 +1,19 @@
+{
+  "name": "slider",
+  "version": "0.0.1",
+  "author": {
+    "name": "Jorge Colindres"
+  },
+  "description": "Slider for TNY",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "Rea.js": "~0.0.7"
+  }
+}
