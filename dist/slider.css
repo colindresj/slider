@@ -36,6 +36,10 @@
 
 .slide {
   float: left;
+  display: none;
+}
+.slide img {
+  width: 100%;
 }
 
 .tnySlider-arrows {
