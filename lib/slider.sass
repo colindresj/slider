@@ -1,5 +1,11 @@
 .slider
   display: none
+  -ms-touch-action: pan-x
+    touch-action: pan-x
+  -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
   &.error
     display: block
     margin: 0 auto
@@ -8,10 +14,17 @@
     padding: 20px
     color: #fff
 
+.slider,
 .tnySlider-container
+  width: 100%
   overflow: hidden
+  position: relative
 
 .tnySlider-wrapper
+  position: relative
+  -webkit-transform: translateZ(0)
+  -webkit-backface-visibility: hidden
+    backface-visibility: hidden
   -webkit-transition: 1s all
     -moz-transition: 1s all
     -ms-transition: 1s all
@@ -19,8 +32,8 @@
     transition: 1s all
 
   &::before, &::after
-  content: ''
-  display: table
+    content: ''
+    display: table
 
 .tnySlider-wrapper::after
   clear: both
@@ -51,6 +64,7 @@
     &:hover
       cursor: pointer
     &::before
+      font-weight: 400
       color: white
       position: absolute
       top: 0
@@ -75,3 +89,4 @@
     opacity: .5
     &:hover
       opacity: 1
+      cursor: pointer

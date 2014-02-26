@@ -1,5 +1,11 @@
 .slider {
   display: none;
+  -ms-touch-action: pan-x;
+  -ms-touch-action-touch-action: pan-x;
+  -webkit-user-select: none;
+  -webkit-user-select--moz-user-select: none;
+  -webkit-user-select--ms-user-select: none;
+  -webkit-user-select-user-select: none;
 }
 .slider.error {
   display: block;
@@ -10,16 +16,25 @@
   color: white;
 }
 
+.slider,
 .tnySlider-container {
+  width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .tnySlider-wrapper {
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility-backface-visibility: hidden;
   -webkit-transition: 1s all;
   -webkit-transition--moz-transition: 1s all;
   -webkit-transition--ms-transition: 1s all;
   -webkit-transition--o-transition: 1s all;
   -webkit-transition-transition: 1s all;
+}
+.tnySlider-wrapper::before, .tnySlider-wrapper::after {
   content: "";
   display: table;
 }
@@ -59,6 +74,7 @@
   cursor: pointer;
 }
 .tnySlider-arrows > .tnySlider-arrow-left::before, .tnySlider-arrows > .tnySlider-arrow-right::before {
+  font-weight: 400;
   color: white;
   position: absolute;
   top: 0;
@@ -89,4 +105,5 @@
 }
 .tnySlider-pagination .pager:hover {
   opacity: 1;
+  cursor: pointer;
 }
