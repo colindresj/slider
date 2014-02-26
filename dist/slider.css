@@ -74,3 +74,19 @@
 .tnySlider-arrows > .tnySlider-arrow-right::before {
   content: ">";
 }
+
+.tnySlider-pagination {
+  text-align: center;
+}
+.tnySlider-pagination .pager {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  border-radius: 50%;
+  background: black;
+  opacity: 0.5;
+}
+.tnySlider-pagination .pager:hover {
+  opacity: 1;
+}
