@@ -107,3 +107,10 @@
   opacity: 1;
   cursor: pointer;
 }
+
+.advertisement {
+  height: 100px;
+  width: 100px;
+  background: black;
+  display: block;
+}
